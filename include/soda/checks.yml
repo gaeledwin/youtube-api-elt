@@ -1,0 +1,18 @@
+checks for api_elt:
+  - missing_count("Video_Id") = 0
+  - duplicate_count("Video_Id") = 0
+
+  - Like_Count_greater_than_videos_views = 0:
+      name: checks Like_Count greater than videos views
+      Like_Count_greater_than_videos_views query:
+          SELECT COUNT(*)
+          FROM api_elt
+          WHERE "Like_Count" > "View_Count"
+  
+  - Comment_Count_greater_than_videos_views = 0:
+      name: checks Comment_Count greater than videos views
+      Comment_Count_greater_than_videos_views query:
+          SELECT COUNT(*)
+          FROM api_elt
+          WHERE "Comment_Count" > "View_Count"
+
