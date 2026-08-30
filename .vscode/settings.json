@@ -1,0 +1,32 @@
+{
+    "cSpell.words": [
+        "occured",
+        "pytest"
+    ]
+}
+
+{
+  "python.analysis.exclude": [
+    "**/logs/**",
+    "**/__pycache__/**",
+    "**/dags/**/__pycache__/**",
+    "**/.git/**",
+    "**/node_modules/**",
+    "**/venv/**",
+    "**/.venv/**",
+    "**/plugins/**/__pycache__/**"
+  ],
+  "python.analysis.autoSearchPaths": true,
+  "python.analysis.diagnosticMode": "openFilesOnly",
+  "python.analysis.indexing": false,
+  "files.watcherExclude": {
+    "**/logs/**": true,
+    "**/__pycache__/**": true,
+    "**/.git/objects/**": true,
+    "**/venv/**": true
+  },
+  "search.exclude": {
+    "**/logs": true,
+    "**/__pycache__": true
+  }
+}
