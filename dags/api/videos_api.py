@@ -6,7 +6,6 @@ from dotenv import load_dotenv
 from airflow.decorators import task
 from airflow.models import Variable
 
-
 api_key = Variable.get('API_KEY')
 max_results = 50
 channel_handle = Variable.get('CHANNEL_HANDLE')
