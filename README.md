@@ -132,7 +132,7 @@ Le dashboard Power BI se compose de deux pages :
 
 ## 🔭 Limites & améliorations possibles
 
-- **Transformation avec dbt** — migrer la logique de transformation actuellement en Python/SQL brut (`data_transformation.py`) vers dbt, pour bénéficier du versioning des modèles, des tests intégrés et du lineage automatique des données.
+- **Transformation avec dbt** - migrer la logique de transformation actuellement en Python/SQL brut (`data_transformation.py`) vers dbt, pour bénéficier du versioning des modèles, des tests intégrés et du lineage automatique des données.
 
 ## 📄 Licence
 
