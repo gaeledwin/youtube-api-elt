@@ -1,4 +1,4 @@
-# 🎬 YouTube Data Pipeline — Mr Beast Channel Analytics
+# 🎬 YouTube Data Pipeline - Mr Beast Channel Analytics
 
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
 ![Airflow](https://img.shields.io/badge/Apache_Airflow-017CEE?logo=apacheairflow&logoColor=white)
@@ -118,14 +118,26 @@ Les données sont validées à deux niveaux (`staging` et `core`) via [Soda Core
 
 Le dashboard Power BI se compose de deux pages :
 
-**Vue d'ensemble** — KPIs globaux (vues, likes, commentaires, nombre de vidéos), évolution des vues par année, et répartition Normal vs Shorts.
+**Vue d'ensemble** - KPIs globaux (vues, likes, commentaires, nombre de vidéos), évolution des vues par année, et répartition Normal vs Shorts.
 
 ![Power BI - Vue d'ensemble](assets/powerbi-overview.jpg)
 
-**Détail par vidéo** — Top vidéos par nombre de vues, distribution des vues selon la durée, et table détaillée, filtrable par type de contenu (Normal / Shorts).
+**Détail par vidéo** - Top vidéos par nombre de vues, distribution des vues selon la durée, et table détaillée, filtrable par type de contenu (Normal / Shorts).
 
 ![Détail - Toutes vidéos](assets/powerbi-detail_global.jpg)
 
 | Vidéos "Normal" | Vidéos "Shorts" |
 |---|---|
 | ![Détail - Normal](assets/powerbi-detail-normal.jpg) | ![Détail - Shorts](assets/powerbi-detail-shorts.jpg) |
+
+## 🔭 Limites & améliorations possibles
+
+- **Transformation avec dbt** — migrer la logique de transformation actuellement en Python/SQL brut (`data_transformation.py`) vers dbt, pour bénéficier du versioning des modèles, des tests intégrés et du lineage automatique des données.
+
+## 📄 Licence
+
+Ce projet est distribué sous licence [MIT](LICENSE).
+
+## 📬 Contact
+
+Des questions sur ce projet ? Écris-moi : **gaeldewin@gmail.com**
